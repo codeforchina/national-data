@@ -1,31 +1,53 @@
 ## ![logo](http://ww4.sinaimg.cn/large/61ff0de3gw1e8qsn8zei7j201o01oglf.jpg) china ![npm](https://badge.fury.io/js/china.png)
 
-a sdk of China national data (data.stats.gov.cn) by [turing](https://npmjs.org/~turing) 
+a sdk of [China National Data Center](http://data.stats.gov.cn), provides shortcuts to query the Regions, Indexs, Details data lists of Mainland, China.
 
-### 如何安装
+### Installation
 ````
 $ npm install china
 ````
 
-### 范例代码
+### Example
 ````javascript
 var china = require('china');
+
+china.index.list('year|month|season',function(err, indexs){
+    // list all indexs here,
+    // contains name, desciption, indexId,
+    // return details as a list
+    console.log(indexs);
+});
+
+// fetch data via indexID
+china.data.findById('A0101', {
+    from: [Date],
+    to: [Date],
+    region: [String],
+    sort: '-time'
+}, function(err, result){
+    console.log(result);
+});
+
+// regions
+china.region.list('province|city|section', function(err, regions){
+    console.log(regions);
+});
 ````
 
 ### API
-详细API接口函数请查看文件： `index.js`
+check this file: `index.js`
 
-### 欢迎贡献代码
-- Fork 这个项目
-- Clone 你的新项目到本地
-- 使用 `npm install` 安装依赖
-- Checkout 一个特性分支
-- 在特性分支上开发你想要的功能
-- 确保功能被完善测试，最好能提供相应的单元测试代码
-- 向我提交一个 pull request，非常感谢 <3
+### Contributing
+- Fork this repo
+- Clone your repo
+- Install dependencies
+- Checkout a feature branch
+- Feel free to add your features
+- Make sure your features are fully tested
+- Open a pull request, and enjoy <3
 
 ### MIT license
-Copyright (c) 2013 turing
+Copyright (c) 2013 turing &lt; o.u.turing@gmail.com &gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

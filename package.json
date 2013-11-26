@@ -1,6 +1,6 @@
 {
   "name": "china",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a sdk of China national data (data.stats.gov.cn)",
   "logo": "http://ww4.sinaimg.cn/large/61ff0de3gw1e8qsn8zei7j201o01oglf.jpg",
   "main": "index.js",
@@ -20,6 +20,6 @@
     "url": "https://github.com/turingou/china/issues"
   },
   "dependencies": {
-    "sdk":"*"
+    "sdk": "*"
   }
 }
