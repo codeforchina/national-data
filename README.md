@@ -1,4 +1,4 @@
-## ![logo](http://ww4.sinaimg.cn/large/61ff0de3gw1e8qsn8zei7j201o01oglf.jpg) china ![npm](https://badge.fury.io/js/china.png)
+## ![china](http://ww4.sinaimg.cn/large/61ff0de3gw1e8qsn8zei7j201o01oglf.jpg) china ![npm](https://badge.fury.io/js/china.png)
 
 a sdk of [China National Data Center](http://data.stats.gov.cn), provides shortcuts to query the Regions, Indexs, Details data lists of Mainland, China.
 
@@ -12,20 +12,20 @@ $ npm install china
 var china = require('china');
 
 china.index.list('year|month|season',function(err, indexs){
-    // list all indexs here,
-    // contains name, desciption, indexId,
-    // return details as a list
-    console.log(indexs);
+  // list all indexs here,
+  // contains name, desciption, indexId,
+  // return details as a list
+  console.log(indexs);
 });
 
 // fetch data via indexID
 china.data.findById('A0101', {
-    from: [Date],
-    to: [Date],
-    region: [String],
-    sort: '-time'
+  from: [Date],
+  to: [Date],
+  region: [String],
+  sort: '-time'
 }, function(err, result){
-    console.log(result);
+  console.log(result);
 });
 
 // regions
@@ -66,7 +66,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
 
 ---
 ![docor](https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/doctor.png)
