@@ -6,7 +6,7 @@
   "author": "turing <o.u.turing@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha tests/*.js"
   },
   "keywords": [
     "china",
@@ -28,5 +28,9 @@
   },
   "dependencies": {
     "sdk": "0.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^4.4.1"
   }
 }

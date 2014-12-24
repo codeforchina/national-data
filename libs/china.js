@@ -1,7 +1,4 @@
-var sdk = require('./sdk');
+var SDK = require('sdk');
+var apis = require('./apis');
 
-module.exports = China;
-
-function China() {
-  this.sdk = sdk;
-}
+module.exports = new SDK(apis.host, apis.routes, apis.rules);

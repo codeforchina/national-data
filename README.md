@@ -18,7 +18,7 @@ china.index.list('year|month|season',function(err, indexs){
   console.log(indexs);
 });
 
-// fetch data via indexID
+// Fetch data via indexID
 china.data.findById('A0101', {
   from: [Date],
   to: [Date],
