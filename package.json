@@ -1,6 +1,6 @@
 {
   "name": "china",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a sdk of China national data (data.stats.gov.cn)",
   "main": "index.js",
   "author": "turing <o.u.turing@gmail.com>",
@@ -15,7 +15,7 @@
     "goverment",
     "open source goverment",
     "mainland china",
-    "prc",
+    "PRC",
     "data",
     "database"
   ],
@@ -27,6 +27,6 @@
     "url": "https://github.com/turingou/china/issues"
   },
   "dependencies": {
-    "sdk": "latest"
+    "sdk": "0.2.1"
   }
 }

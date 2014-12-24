@@ -1,10 +1,10 @@
-## ![china](http://ww4.sinaimg.cn/large/61ff0de3gw1e8qsn8zei7j201o01oglf.jpg) china ![npm](https://badge.fury.io/js/china.png)
+## China ![npm](https://badge.fury.io/js/china.png)
 
-a sdk of [China National Data Center](http://data.stats.gov.cn), provides shortcuts to query the Regions, Indexs, Details data lists of Mainland, China.
+a SDK of [China National Database](http://data.stats.gov.cn) in Node.js
 
 ### Installation
 ````
-$ npm install china
+$ npm install china --save
 ````
 
 ### Example
@@ -30,12 +30,12 @@ china.data.findById('A0101', {
 
 // regions
 china.region.list('province|city|section', function(err, regions){
-    console.log(regions);
+  console.log(regions);
 });
 ````
 
 ### API
-check this file: `index.js`
+check this file: `libs/china.js`
 
 ### Contributing
 - Fork this repo
